@@ -369,7 +369,7 @@ class Matrix():
             
             - The inverse can only be computed for SQUARE matrices
             
-            - A matrix is not invertible if the determinant is equivalent to 0
+            - A matrix is not invertible if its determinant is equivalent to 0
         '''
         
         if self.Determinant()==0: 
