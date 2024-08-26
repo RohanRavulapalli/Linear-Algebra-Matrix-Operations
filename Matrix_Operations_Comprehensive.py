@@ -361,8 +361,9 @@ class Matrix():
         the "Inverse" of matrix X.
         
         Two prominently used methods to compute the inverse of a matrix (if it exists) are the adjugate formula, and 
-        gauss-jordan elimination. This method uses the adjugate formula for computing inverse matrices, but calls upon the
-        method named "GaussInverse" automatically when the input matrix is larger than 4x4.
+        gauss-jordan elimination. In order to showcase both methods, while not completely sacrificing computational complexity,
+        the adjugate formula is used in this method for computing matrices that are between 2x2 and 4x4 in dimension (inclusive). 
+        For matrices larger than 4x4, gauss-jordan elimination is used for computing the inverse of the matrix.
         
         Restrictions:
             
