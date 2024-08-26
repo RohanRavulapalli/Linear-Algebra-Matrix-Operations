@@ -103,9 +103,8 @@ class Matrix():
             
             - All zero rows (rows that contain all zeros) must be at the BOTTOM of the matrix
             
-            - The pivot entries of the matrix (the first nonzero entry in each row) must move down and right 
+            - The pivot entries of the matrix (the first nonzero entry in each row) must be to the right of the pivot entry of the row above it
 
-        
         RREF (Reduced Row Echelon Form) Requirements:
             
             - The matrix must be in REF (Standard Reduced Row Echelon Form)
