@@ -303,11 +303,11 @@ class Matrix():
         row echelon form or reduced row echelon form.
         '''
         
-        self.REF()
+        self.EchelonForm("j") # specifying choice "j" reduces the matrix to standard row echelon form (REF)
                 
-        zero_row = [0 for num in self.matrix[0]]
+        zero_row = [0 for num in self.matrix[0]] # zero rows are rows containing all zeros
         
-        return len([row for row in self.matrix if row != zero_row])
+        return len([row for row in self.matrix if row != zero_row]) # counting the number of non-zero rows
     
     def Determinant(self):
         '''
