@@ -491,18 +491,6 @@ def Create():
     
     from math import pi, e
     
-    from fractions import Fraction
-    
-    
-    def NumParser(NumericVal: str):
-        
-        # As of now, I am using the eval() function to evaluate numeric inputs for matrices. eval() is stated to be very
-        # insecure and dangerous since malicious attacks on software can be executed through it. Hence, I will attempt to create
-        # a numeric input parser where I can distinguish decimals, fractions, integers, integers raised to a certain power,
-        # etc. For fractions, I may have to create a fraction class in which I define a mult method.
-        pass
-    
-    
     def User_Matrix(FirstMatrixDim: (int, int), choice): # Creates and validates the matrix given by user
         '''
         In charge of creating and initializing the user's matrices, as well as verifying if the operation specified is valid
