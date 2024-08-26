@@ -443,10 +443,6 @@ class Matrix():
             on an identity matrix of equivalent dimension, we wound up with the inverse of matrix .
             '''
             
-            '''
-            this part of the operation is still running into errors and must be fixed
-            '''
-            
             Identity_Matrix = self.Identity()
             for i in range(len(self.matrix)):
                 self.matrix[i].extend(Identity_Matrix.matrix[i])
